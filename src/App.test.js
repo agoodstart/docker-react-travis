@@ -9,7 +9,7 @@ test('renders learn react link', () => {
 
 test('renders I was changed paragraph', () => {
   render(<App />);
-  const linkElement = screen.getByText(/I was changed/i);
+  const linkElement = screen.getByText(/I was changed on the feature branch/i);
   expect(linkElement).toBeInTheDocument();
 });
 
