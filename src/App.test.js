@@ -7,6 +7,12 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+test('renders I was changed paragraph', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/I was changed/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
 test('renders', () => {
   render(<App />);
 });
